@@ -1,0 +1,144 @@
+[
+  {
+    "categoria": "logos",
+    "subcategoria": "futbol",
+    "nombre": "Premier League",
+    "imagen": "images/camisas/premier league/lpremier.png",
+    "redirigirA": "camisetas-premierleague.html"
+  },
+  {
+    "categoria": "camisetasm",
+    "subcategoria": "premier",
+    "nombre": "Arsenal Casa 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/ARSENAL CASA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "premier",
+    "nombre": "Chelsea Casa 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/CHELSEA CASA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "premier",
+    "nombre": "Liverpool Casa 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/LIVERPOOL CASA 25-26 CASA FAN Y PLAYER.jpeg"
+  },
+  {
+    "categoria": "camisetasm",
+    "subcategoria": "premier",
+    "nombre": "Manchester City 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/MAN CITY CASA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "premier",
+    "nombre": "Manchester United 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/MAN UNITED CASA 24-25 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "premier",
+    "nombre": "Newcastle Casa 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/NEWCASTLE CASA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "premier",
+    "nombre": "Camiseta Barcelona Mujer",
+    "version":"Fan",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/NOTTINGHAM FOREST CASA 25-26 SOLO FAN.jpg"
+  },
+  {
+    "categoria": "camisetas",
+    "subcategoria": "niños",
+    "nombre": "Camiseta PSG Niños",
+    "version":"Fan y Player",
+    "precio": 38,
+    "imagen": "images/camisas/premier league/TOTTENHAM CASA 25-26 FAN Y PLAYER.jpg"
+  },
+  {
+    "categoria": "balones",
+    "subcategoria": "mundial",
+    "nombre": "Al Him Final 2022",
+    "precio": 30,
+    "imagen": "images/balones/mundial/Al Him Final 2022.JPG"
+  },
+    {
+    "categoria": "balones",
+    "subcategoria": "mundial",
+    "nombre": "Al Rhila 2022",
+    "precio": 30,
+    "imagen": "images/balones/mundial/Al Rhila 2022.JPG",
+    "redirigirA": "camisetas-mujer.html"
+  },
+    {
+    "categoria": "balones",
+    "subcategoria": "mundia",
+    "nombre": "Brazuca 2014",
+    "precio": 30,
+    "imagen": "images/balones/mundial/Brazuca 2014.JPG"
+  },
+  {
+    "categoria": "balones",
+    "subcategoria": "mundial",
+    "nombre": "Fevernova 2002",
+    "precio": 28,
+    "imagen": "images/balones/mundial/Fevernova 2002.JPG"
+  },
+  {
+    "categoria": "balones",
+    "subcategoria": "mundial",
+    "nombre": "Jabulani 2010",
+    "precio": 25,
+    "imagen": "images/balones/mundial/Jabulani 2010.JPG"
+  },
+   {
+    "categoria": "balones",
+    "subcategoria": "mundial",
+    "nombre": "Teamgeist 2006",
+    "precio": 25,
+    "imagen": "images/balones/mundial/Teamgeist 2006.JPG"
+  },
+   {
+    "categoria": "balones",
+    "subcategoria": "mundial",
+    "nombre": "Telstar 2018",
+    "precio": 25,
+    "imagen": "images/balones/mundial/Telstar 2018.JPG"
+  },
+  {
+    "categoria": "calzado",
+    "subcategoria": "hombre",
+    "nombre": "Zapatos Nike Hombre",
+    "precio": 60,
+    "imagen": "images/zapato1.jpg"
+  },
+  {
+    "categoria": "calzado",
+    "subcategoria": "mujer",
+    "nombre": "Zapatillas Adidas Mujer",
+    "precio": 55,
+    "imagen": "images/zapato2.jpg"
+  },
+  {
+    "categoria": "calzado",
+    "subcategoria": "niños",
+    "nombre": "Tenis Reebok Niños",
+    "precio": 50,
+    "imagen": "images/zapato3.jpg"
+  }
+]

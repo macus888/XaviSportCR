@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Catálogo Deportivo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .product-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo Deportivo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
   <!-- Botón para abrir el menú lateral -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+        aria-controls="sidebar">
         ☰ Categorías
       </button>
-      <span class="navbar-brand mb-0 h1">Catálogo Deportivo</span>
+      <span class="navbar-brand mb-0 h1">Xavi Sport Cr</span>
     </div>
   </nav>
 
@@ -39,89 +28,89 @@
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
     </div>
     <div class="offcanvas-body">
+
       <div class="accordion" id="accordionCategorias">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingCamisetas">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCamisetas" aria-expanded="false" aria-controls="collapseCamisetas">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseCamisetas" aria-expanded="false" aria-controls="collapseCamisetas">
               Camisetas
             </button>
           </h2>
-          <div id="collapseCamisetas" class="accordion-collapse collapse" aria-labelledby="headingCamisetas" data-bs-parent="#accordionCategorias">
+          <div id="collapseCamisetas" class="accordion-collapse collapse" aria-labelledby="headingCamisetas"
+            data-bs-parent="#accordionCategorias">
             <div class="accordion-body">
-              <a href="#camisetas-hombre" class="btn btn-outline-primary w-100 mb-2">Hombre</a>
-              <a href="#camisetas-mujer" class="btn btn-outline-primary w-100 mb-2">Mujer</a>
-              <a href="#camisetas-ninos" class="btn btn-outline-primary w-100 mb-2">Niños</a>
+              <a href="camisetas-hombre.html" class="btn btn-outline-primary w-100 mb-2">Hombre</a>
+              <a href="camisetas-mujer.html" class="btn btn-outline-primary w-100 mb-2">Mujer</a>
+              <a href="camisetas-niños.html" class="btn btn-outline-primary w-100 mb-2">Niños</a>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingBalones">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBalones" aria-expanded="false" aria-controls="collapseBalones">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseBalones" aria-expanded="false" aria-controls="collapseBalones">
               Balones
             </button>
           </h2>
-          <div id="collapseBalones" class="accordion-collapse collapse" aria-labelledby="headingBalones" data-bs-parent="#accordionCategorias">
+          <div id="collapseBalones" class="accordion-collapse collapse" aria-labelledby="headingBalones"
+            data-bs-parent="#accordionCategorias">
             <div class="accordion-body">
-              <a href="balones-hombre.html" class="btn btn-outline-primary w-100 mb-2">Mundiales</a>
-              <a href="#balones-mujer" class="btn btn-outline-primary w-100 mb-2">Mujer</a>
-              <a href="#balones-ninos" class="btn btn-outline-primary w-100 mb-2">Niños</a>
+              <a href="balones-mundial.html" class="btn btn-outline-primary w-100 mb-2">Mundial</a>
+              <a href="balones-mujer.html" class="btn btn-outline-primary w-100 mb-2">Mujer</a>
+              <a href="balones-niños.html" class="btn btn-outline-primary w-100 mb-2">Niños</a>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingCalzado">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCalzado" aria-expanded="false" aria-controls="collapseCalzado">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseCalzado" aria-expanded="false" aria-controls="collapseCalzado">
               Calzado
             </button>
           </h2>
-          <div id="collapseCalzado" class="accordion-collapse collapse" aria-labelledby="headingCalzado" data-bs-parent="#accordionCategorias">
+          <div id="collapseCalzado" class="accordion-collapse collapse" aria-labelledby="headingCalzado"
+            data-bs-parent="#accordionCategorias">
             <div class="accordion-body">
-              <a href="#calzado-hombre" class="btn btn-outline-primary w-100 mb-2">Hombre</a>
-              <a href="#calzado-mujer" class="btn btn-outline-primary w-100 mb-2">Mujer</a>
-              <a href="#calzado-ninos" class="btn btn-outline-primary w-100 mb-2">Niños</a>
+              <a href="calzado-hombre.html" class="btn btn-outline-primary w-100 mb-2">Hombre</a>
+              <a href="calzado-mujer.html" class="btn btn-outline-primary w-100 mb-2">Mujer</a>
+              <a href="calzado-niños.html" class="btn btn-outline-primary w-100 mb-2">Niños</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Contenido principal -->
   <div class="container mt-4">
-    <h2 id="camisetas-hombre">Camisetas Hombre</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="images//balones/Fevernova 2002.JPG" alt="Camiseta Hombre">
-          <h5>Camiseta Hombre</h5>
-          <p>Precio: $45</p>
-        </div>
-      </div>
-    </div>
-
-    <h2 id="balones-hombre">Balones Hombre</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="images/balones/Telstar 2018.JPG" alt="Balón Hombre">
-          <h5>Balón Hombre</h5>
-          <p>Precio: $30</p>
-        </div>
-      </div>
-    </div>
-
-    <h2 id="calzado-hombre">Calzado Hombre</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="images/balones/Jabulani 2010.JPG" alt="Zapato Hombre">
-          <h5>Zapato Hombre</h5>
-          <p>Precio: $60</p>
-        </div>
-      </div>
+    <h2>Productos</h2>
+    <div class="product-grid" id="galeria-productos">
+      <!-- Productos se cargarán aquí -->
     </div>
   </div>
 
+  <script>
+    fetch('productos.json')
+      .then(response => response.json())
+      .then(data => {
+        const galeria = document.getElementById('galeria-productos');
+        data.forEach(producto => {
+          const card = document.createElement('div');
+          card.className = 'product-card';
+          card.innerHTML = `
+            <img src="${producto.imagen}" alt="${producto.nombre}">
+            <h5>${producto.nombre}</h5>
+            <p>Precio: $${producto.precio}</p>
+          `;
+          card.querySelector('img').addEventListener('click', () => {
+            window.location.href = producto.redirigirA;
+          });
+          galeria.appendChild(card);
+        });
+      })
+      .catch(error => console.error('Error al cargar productos:', error));
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
