@@ -7,6 +7,13 @@
     "redirigirA": "camisetas-premierleague.html"
   },
   {
+    "categoria": "logos",
+    "subcategoria": "futbol",
+    "nombre": "La Liga",
+    "imagen": "images/camisas/La Liga/llaliga.png",
+    "redirigirA": "camisetas-laliga.html"
+  },
+  {
     "categoria": "camisetasm",
     "subcategoria": "premier",
     "nombre": "Arsenal Casa 25-26",
@@ -57,10 +64,98 @@
     {
     "categoria": "camisetasm",
     "subcategoria": "premier",
-    "nombre": "Camiseta Barcelona Mujer",
+    "nombre": "Nottingham Forest Casa 25-26",
     "version":"Fan",
     "precio": 42,
     "imagen": "images/camisas/premier league/NOTTINGHAM FOREST CASA 25-26 SOLO FAN.jpg"
+  },
+  {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Atletico Madrid Casa 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/ATL MADRID CASA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Atletico Madrid Visita 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/ATL MADRID VISITA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Barcelona Casa 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/BARCELONA CASA 24-25 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Barcelona Visita 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/BARCELONA VISITA 24-25 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Barcelona 3era 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/BARCELONA 3ERA 24-25 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Real Madrid Casa 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/REAL MADRID CASA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Real Madrid Visita 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/REAL MADRID VISITA 25-26 FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Real Madrid 3era 25-26",
+    "version":"Fan y Player",
+    "precio": 42,
+    "imagen": "images/camisas/premier league/REAL MADRID 3ERA FAN Y PLAYER.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Valencia Casa 25-26",
+    "version":"Fan",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/VALENCIA CASA 25-26 SOLO FAN.jpg"
+  },
+    {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Betis Casa 25-26",
+    "version":"Fan",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/BETIS CASA 25-26 CASA SOLO FAN.jpg"
+  },
+  {
+    "categoria": "camisetasm",
+    "subcategoria": "laliga",
+    "nombre": "Villareal Casa 25-26",
+    "version":"Fan",
+    "precio": 42,
+    "imagen": "images/camisas/La Liga/VILLAREAL CASA 25-26 SOLO FAN.jpg"
   },
   {
     "categoria": "camisetas",
