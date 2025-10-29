@@ -1,35 +1,21 @@
 {
-  "camisetas": {
-    "hombre-premier": [
-      {
-        "categoria": "camisetasm",
-        "subcategoria": "premier",
-        "nombre": "Chelsea Casa 25-26",
-        "version": "Fan y Player",
-        "precio": 42,
-        "imagen": "images/camisas/premier league/CHELSEA CASA 25-26 FAN Y PLAYER.jpg"
-      },
-      {
-        "nombre": "Camiseta Arsenal 2024",
-        "precio": 58900,
-        "imagen": "img/arsenal.jpg"
-      }
-    ],
-    "hombre-laliga": [
-      {
-        "nombre": "Camiseta Real Madrid 2024",
-        "precio": 61900,
-        "imagen": "img/real_madrid.jpg"
-      }
-    ]
+  "camisas": {
+    "hombre": {
+      "premier-league": [
+        { "nombre": "Camiseta Manchester City 2024", "precio": 59900, "imagen": "img/man_city.jpg" },
+        { "nombre": "Camiseta Arsenal 2024", "precio": 58900, "imagen": "img/arsenal.jpg" }
+      ],
+      "la-liga": [
+        { "nombre": "Camiseta Real Madrid 2024", "precio": 61900, "imagen": "img/real_madrid.jpg" }
+      ]
+    },
+    "mujer": {
+      "premier-league": [
+        { "nombre": "Camiseta Chelsea Mujer 2024", "precio": 57900, "imagen": "img/chelsea_mujer.jpg" }
+      ]
+    }
   },
-  "balones": {
-    "mundial": [
-      {
-        "nombre": "Balón Al Rihla Mundial 2022",
-        "precio": 49900,
-        "imagen": "img/al_rihla.jpg"
-      }
-    ]
-  }
+  "ofertas": [
+    { "nombre": "Balón Adidas Copa Mundial 2022", "precio": 34900, "imagen": "img/al_rihla.jpg" }
+  ]
 }
