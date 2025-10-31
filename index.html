@@ -6,21 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Catálogo Deportivo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-  <!-- Botón para abrir el menú lateral -->
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
-        aria-controls="sidebar">
-        ☰ Categorías
-      </button>
-      <span class="navbar-brand mb-0 h1">Xavi Sport Cr</span>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-dark navbar-custom">
+    <div class="container-fluid d-flex align-items-center">
+      <button class="btn btn-outline-light me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+        aria-controls="sidebar">☰</button>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo-xavi1.jpg" alt="Xavi Sports Logo">
+        <!--<span class="fw-bold">Xavi Sports</span>-->
+      </a>
     </div>
   </nav>
-  <!-- Menú lateral responsivo con submenús colapsables -->
+
+  <!-- 🔹 Menú lateral con 4 niveles -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="sidebarLabel">Categorías</h5>
@@ -28,216 +31,157 @@
     </div>
     <div class="offcanvas-body">
       <div class="accordion" id="accordionCategorias">
-        <!--Nivel 1: Camisetas-->
+        <!-- Nivel 1: Camisas -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingCamisas">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapseCamisas" aria-expanded="false" aria-controls="collapseCamisas">
+      Camisas
+    </button>
+  </h2>
+  <div id="collapseCamisas" class="accordion-collapse collapse" aria-labelledby="headingCamisas"
+    data-bs-parent="#accordionCategorias">
+    <div class="accordion-body">
+
+      <!-- Nivel 2: Hombre -->
+      <div class="accordion" id="accordionSubCamisas">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingCamisetas">
+          <h2 class="accordion-header" id="headingHombre">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseCamisetas" aria-expanded="false" aria-controls="collapseCamisetas">
-              Camisetas
+              data-bs-target="#collapseHombre" aria-expanded="false" aria-controls="collapseHombre">
+              Hombre
             </button>
           </h2>
-          <div id="collapseCamisetas" class="accordion-collapse collapse" aria-labelledby="headingCamisetas"
-            data-bs-parent="#accordionCategorias">
+          <div id="collapseHombre" class="accordion-collapse collapse" aria-labelledby="headingHombre"
+            data-bs-parent="#accordionSubCamisas">
             <div class="accordion-body">
-              <!--Subnivel dentro de camisetas-->
-              <div class="accordion" id="accordionSubCamisetas">
+
+              <!-- Nivel 3: Deportes -->
+              <div class="accordion" id="accordionDeportesHombre">
+                <!-- Futbol -->
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingHombre">
+                  <h2 class="accordion-header" id="headingFutbolHombre">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseHombre" aria-expanded="false" aria-controls="collapseHombre">
-                      Hombre
+                      data-bs-target="#collapseFutbolHombre" aria-expanded="false" aria-controls="collapseFutbolHombre">
+                      Futbol
                     </button>
                   </h2>
-                  <div id="collapseHombre" class="accordion-collapse collapse" aria-labelledby="headingHombre"
-                    data-bs-parent="#accordionSubCamisetas">
+                  <div id="collapseFutbolHombre" class="accordion-collapse collapse" aria-labelledby="headingFutbolHombre"
+                    data-bs-parent="#accordionDeportesHombre">
                     <div class="accordion-body">
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2 btn-premier" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Premier League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">La Liga</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Serie A</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Bundesliga</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Ligue 1 Francia</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Saudi League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Liga MX</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Liga Argentina</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier">Eredivisie Holanda</a>
+                      <!-- Nivel 4: Ligas -->
+                      <a href="#" class="btn btn-premier w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="hombre" data-deporte="futbol" data-liga="premier-league">Premier League</a>
+                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="hombre" data-deporte="futbol" data-liga="la-liga">La Liga</a>
                     </div>
                   </div>
                 </div>
+
+                <!-- MLB -->
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingMujer">
+                  <h2 class="accordion-header" id="headingMLBHombre">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseMujer" aria-expanded="false" aria-controls="collapseMujer">
-                      Mujer
+                      data-bs-target="#collapseMLBHombre" aria-expanded="false" aria-controls="collapseMLBHombre">
+                      MLB
                     </button>
                   </h2>
-                  <div id="collapseMujer" class="accordion-collapse collapse" aria-labelledby="headingMujer"
-                    data-bs-parent="#accordionSubCamisetas">
+                  <div id="collapseMLBHombre" class="accordion-collapse collapse" aria-labelledby="headingMLBHombre"
+                    data-bs-parent="#accordionDeportesHombre">
                     <div class="accordion-body">
-                      <a href="#" class="btn btn-premier w-100 mb-2" data-categoria="camisas" data-subcategoria="hombre"
-                        data-liga="premier-league">Premier League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier " data-liga="La-Liga">La Liga</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier" data-liga="Serie-A">Serie A</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier" data-liga="Bundeliga">Bundesliga</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier" data-liga="Ligue-1">Ligue 1 Francia</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier" data-liga="Saudi-League">Saudi League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier" data-liga="Liga-Mx">Liga MX</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier" data-liga="Liga-Argentina">Liga Argentina</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                        data-subcategoria="hombre-premier" data-liga="Eredivisie">Eredivisie Holanda</a>
+                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="hombre" data-deporte="mlb" data-liga="american-league">American League</a>
+                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="hombre" data-deporte="mlb" data-liga="national-league">National League</a>
                     </div>
                   </div>
                 </div>
-              </div>
+
+              </div> <!-- Fin Nivel 3: Deportes Hombre -->
+
             </div>
           </div>
         </div>
+
+        <!-- Nivel 2: Mujer -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingBalones">
+          <h2 class="accordion-header" id="headingMujer">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseBalones" aria-expanded="false" aria-controls="collapseBalones">
-              Balones
+              data-bs-target="#collapseMujer" aria-expanded="false" aria-controls="collapseMujer">
+              Mujer
             </button>
           </h2>
-          <div id="collapseBalones" class="accordion-collapse collapse" aria-labelledby="headingBalones"
-            data-bs-parent="#accordionCategorias">
+          <div id="collapseMujer" class="accordion-collapse collapse" aria-labelledby="headingMujer"
+            data-bs-parent="#accordionSubCamisas">
             <div class="accordion-body">
-              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="balones"
-                data-subcategoria="hombre-premier">Mundial</a>
-              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="balones"
-                data-subcategoria="hombre-premier">Eredivisie Holanda</a>
-              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="balones"
-                data-subcategoria="hombre-premier">Eredivisie Holanda</a>
+
+              <!-- Nivel 3: Deportes -->
+              <div class="accordion" id="accordionDeportesMujer">
+                <!-- Futbol -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFutbolMujer">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFutbolMujer" aria-expanded="false" aria-controls="collapseFutbolMujer">
+                      Futbol
+                    </button>
+                  </h2>
+                  <div id="collapseFutbolMujer" class="accordion-collapse collapse" aria-labelledby="headingFutbolMujer"
+                    data-bs-parent="#accordionDeportesMujer">
+                    <div class="accordion-body">
+                      <a href="#" class="btn btn-premier w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="mujer" data-deporte="futbol" data-liga="premier-league">Premier League</a>
+                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="mujer" data-deporte="futbol" data-liga="la-liga">La Liga</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MLB -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingMLBMujer">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseMLBMujer" aria-expanded="false" aria-controls="collapseMLBMujer">
+                      MLB
+                    </button>
+                  </h2>
+                  <div id="collapseMLBMujer" class="accordion-collapse collapse" aria-labelledby="headingMLBMujer"
+                    data-bs-parent="#accordionDeportesMujer">
+                    <div class="accordion-body">
+                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="mujer" data-deporte="mlb" data-liga="american-league">American League</a>
+                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="mujer" data-deporte="mlb" data-liga="national-league">National League</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- Fin Nivel 3: Deportes Mujer -->
+
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingCalzado">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseCalzado" aria-expanded="false" aria-controls="collapseCalzado">
-              Calzado
-            </button>
-          </h2>
-          <div id="collapseCalzado" class="accordion-collapse collapse" aria-labelledby="headingCalzado"
-            data-bs-parent="#accordionCategorias">
-            <div class="accordion-body">
-              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                data-subcategoria="hombre-premier">Eredivisie Holanda</a>
-              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                data-subcategoria="hombre-premier">Eredivisie Holanda</a>
-              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisetas"
-                data-subcategoria="hombre-premier">Eredivisie Holanda</a>
-            </div>
-          </div>
-        </div>
+
+      </div> <!-- Fin Nivel 2: Hombre/Mujer -->
+
+    </div>
+  </div>
+</div>
+
+        
+      
       </div>
     </div>
   </div>
+  </div>
+  </div>
+
+  <!-- 🔹 Contenedor de productos -->
   <div class="container mt-4">
     <h2 id="titulo-seccion">Ofertas</h2>
-    <div class="product-grid" id="galeria-productos">
-      <!-- Productos se cargarán aquí -->
-    </div>
+    <div class="product-grid" id="galeria-productos"></div>
   </div>
-  <script>
-    let productosData = {};
-    // Cargar productos desde JSON
-    fetch('productos.json')
-      .then(response => response.json())
-      .then(data => {
-        productosData = data;
-        // 🔹 Al iniciar, mostrar los productos de ofertas
-        if (productosData["ofertas"]) {
-          mostrarProductos("ofertas");
-        }
-      })
-      .catch(err => console.error("Error al cargar productos.json:", err));
-
-    // Mostrar productos según categoría y subcategoría
-    // 🟢 Mostrar productos (1, 2 o 3 niveles)
-    function mostrarProductos(categoria, subcategoria = null, liga = null) {
-      const contenedor = document.getElementById('galeria-productos');
-      const titulo = document.getElementById('titulo-seccion');
-      contenedor.innerHTML = '';
-
-      let productos = [];
-
-      // Determinar nivel
-      if (liga) {
-        productos = productosData?.[categoria]?.[subcategoria]?.[liga] || [];
-      } else if (subcategoria) {
-        productos = productosData?.[categoria]?.[subcategoria] || [];
-      } else {
-        productos = productosData?.[categoria] || [];
-      }
-
-      // Actualizar título (usa requestAnimationFrame para asegurar repintado)
-      if (titulo) {
-        const nuevoTitulo = liga
-          ? liga.replace(/-/g, ' ').toUpperCase()
-          : subcategoria
-            ? subcategoria.replace(/-/g, ' ').toUpperCase()
-            : categoria.replace(/-/g, ' ').toUpperCase();
-
-        requestAnimationFrame(() => {
-          titulo.textContent = nuevoTitulo;
-        });
-      }
-
-      // Mostrar productos
-      if (!productos.length) {
-        contenedor.innerHTML = '<p class="text-center mt-4">No hay productos disponibles.</p>';
-        return;
-      }
-
-      productos.forEach(p => {
-        const card = `
-        <div class="product-card">
-          <img src="${p.imagen}" alt="${p.nombre}" class="product-img">
-          <h5>${p.nombre}</h5>
-          <p>₡${p.precio.toLocaleString()}</p>
-        </div>`;
-        contenedor.insertAdjacentHTML('beforeend', card);
-      });
-    }
-    // Escuchar clics en los botones del menú
-    document.addEventListener('click', e => {
-      const btn = e.target.closest('[data-categoria]');
-      if (btn) {
-        e.preventDefault();
-        const categoria = btn.getAttribute('data-categoria');
-        const subcategoria = btn.getAttribute('data-subcategoria');
-        const liga = btn.getAttribute('data-liga');
-
-        // 🔹 Cerrar el menú lateral (offcanvas)
-        const sidebar = document.getElementById('sidebar');
-        const offcanvas = bootstrap.Offcanvas.getInstance(sidebar);
-        if (offcanvas) {
-          offcanvas.hide();
-        }
-        setTimeout(() => {
-          mostrarProductos(categoria, subcategoria, liga);
-        }, 350);
-      } else {
-        mostrarProductos(categoria, subcategoria, liga);
-      }
-    });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

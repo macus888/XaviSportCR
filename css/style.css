@@ -1,0 +1,103 @@
+       body {
+  background: linear-gradient(135deg, #f6f6f6 0%, #e3e3e3 50%, #d9d9d9 100%);
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+       }
+
+       /* ====== NAVBAR PERSONALIZADO ====== */
+       .navbar-custom {
+         background: radial-gradient(circle at top left, #3B006E, #1A002D 80%);
+         box-shadow: 0 0 20px rgba(106, 13, 173, 0.6);
+         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+       }
+
+       .navbar-brand img {
+         height: 100px;
+         width: auto;
+         margin-right: 10px;
+         filter: drop-shadow(0 0 6px rgba(160, 32, 240, 0.8));
+       }
+
+       .navbar-brand span {
+         color: #fff;
+         text-shadow: 0 0 10px rgba(160, 32, 240, 0.6);
+       }
+
+       .btn-outline-light {
+         border-color: rgba(255, 255, 255, 0.6);
+         color: #fff;
+       }
+
+       .btn-outline-light:hover {
+         background-color: rgba(255, 255, 255, 0.15);
+       }
+
+       /* ====== CONTENEDOR PRINCIPAL ====== */
+       .product-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+         gap: 20px;
+         margin-top: 20px;
+       }
+
+       /* ====== TARJETA DE PRODUCTO ====== */
+       .product-card {
+         border: 1px solid rgba(255, 255, 255, 0.15);
+         border-radius: 12px;
+         padding: 15px;
+         text-align: center;
+         background-color: rgba(255, 255, 255, 0.08);
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         color: #0e0d0d;
+       }
+
+       .product-card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 0 20px rgba(160, 32, 240, 0.5);
+       }
+
+       /* ====== IMAGEN DEL PRODUCTO ====== */
+       .product-img {
+         width: 200px;
+         height: 200px;
+         border-radius: 20px;
+         object-fit: cover;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+         transition: transform 0.3s ease;
+       }
+
+       .product-img:hover {
+         transform: scale(1.1);
+       }
+
+       /* ====== TEXTO DE LA TARJETA ====== */
+       .product-card h5 {
+         margin-top: 10px;
+         font-size: 1.1rem;
+         color: #0e0d0d;
+       }
+
+       .product-card p {
+         color: #cbb3ff;
+         font-weight: 500;
+         margin-bottom: 0;
+       }
+
+       /* ====== BOTÓN PREMIER LEAGUE CON IMAGEN ====== */
+       .btn-premier {
+         background-image: url('img/premier-bg.jpg');
+         background-size: cover;
+         background-position: center;
+         color: white;
+         border: none;
+         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+         font-weight: bold;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+       }
+
+       .btn-premier:hover {
+         transform: scale(1.05);
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+       }
