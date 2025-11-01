@@ -4,9 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Catálogo Deportivo</title>
+  <title>Xavi Sports - Virtual Store</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,7 +22,7 @@
         aria-controls="sidebar">☰</button>
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="images/logo-xavi1.jpg" alt="Xavi Sports Logo">
-        <!--<span class="fw-bold">Xavi Sports</span>-->
+
       </a>
     </div>
   </nav>
@@ -31,148 +35,517 @@
     </div>
     <div class="offcanvas-body">
       <div class="accordion" id="accordionCategorias">
-        <!-- Nivel 1: Camisas -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="headingCamisas">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-      data-bs-target="#collapseCamisas" aria-expanded="false" aria-controls="collapseCamisas">
-      Camisas
-    </button>
-  </h2>
-  <div id="collapseCamisas" class="accordion-collapse collapse" aria-labelledby="headingCamisas"
-    data-bs-parent="#accordionCategorias">
-    <div class="accordion-body">
 
-      <!-- Nivel 2: Hombre -->
-      <div class="accordion" id="accordionSubCamisas">
+        <!-- ==================== BALONES ==================== -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingHombre">
+          <h2 class="accordion-header" id="headingBalones">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseHombre" aria-expanded="false" aria-controls="collapseHombre">
-              Hombre
+              data-bs-target="#collapseBalones" aria-expanded="false" aria-controls="collapseBalones">
+              Balones
             </button>
           </h2>
-          <div id="collapseHombre" class="accordion-collapse collapse" aria-labelledby="headingHombre"
-            data-bs-parent="#accordionSubCamisas">
+          <div id="collapseBalones" class="accordion-collapse collapse" aria-labelledby="headingBalones"
+            data-bs-parent="#accordionBalones">
             <div class="accordion-body">
-
-              <!-- Nivel 3: Deportes -->
-              <div class="accordion" id="accordionDeportesHombre">
-                <!-- Futbol -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFutbolHombre">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFutbolHombre" aria-expanded="false" aria-controls="collapseFutbolHombre">
-                      Futbol
-                    </button>
-                  </h2>
-                  <div id="collapseFutbolHombre" class="accordion-collapse collapse" aria-labelledby="headingFutbolHombre"
-                    data-bs-parent="#accordionDeportesHombre">
-                    <div class="accordion-body">
-                      <!-- Nivel 4: Ligas -->
-                      <a href="#" class="btn btn-premier w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="hombre" data-deporte="futbol" data-liga="premier-league">Premier League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="hombre" data-deporte="futbol" data-liga="la-liga">La Liga</a>
-                    </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingBalonFutbol">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBalonFutbol" aria-expanded="false" aria-controls="collapseBalonFutbol">
+                    Futbol
+                  </button>
+                </h2>
+                <div id="collapseBalonFutbol" class="accordion-collapse collapse" aria-labelledby="headingBalonFutbol"
+                  data-bs-parent="#accordionBalonFutbol">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Mundial</a>
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Otros</a>
                   </div>
                 </div>
-
-                <!-- MLB -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingMLBHombre">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseMLBHombre" aria-expanded="false" aria-controls="collapseMLBHombre">
-                      MLB
-                    </button>
-                  </h2>
-                  <div id="collapseMLBHombre" class="accordion-collapse collapse" aria-labelledby="headingMLBHombre"
-                    data-bs-parent="#accordionDeportesHombre">
-                    <div class="accordion-body">
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="hombre" data-deporte="mlb" data-liga="american-league">American League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="hombre" data-deporte="mlb" data-liga="national-league">National League</a>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingBalonNBA">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBalonNBA" aria-expanded="false" aria-controls="collapseBalonNBA">
+                    NBA
+                  </button>
+                </h2>
+                <div id="collapseBalonNBA" class="accordion-collapse collapse" aria-labelledby="headingBalonNBA"
+                  data-bs-parent="#accordionBalonNBA">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Balones</a>
                   </div>
                 </div>
-
-              </div> <!-- Fin Nivel 3: Deportes Hombre -->
-
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Nivel 2: Mujer -->
+        <!-- ==================== BUZOS ==================== -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingMujer">
+          <h2 class="accordion-header" id="headingBuzos">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseMujer" aria-expanded="false" aria-controls="collapseMujer">
-              Mujer
+              data-bs-target="#collapseBuzos" aria-expanded="false" aria-controls="collapseBuzos">
+              Buzos
             </button>
           </h2>
-          <div id="collapseMujer" class="accordion-collapse collapse" aria-labelledby="headingMujer"
-            data-bs-parent="#accordionSubCamisas">
+          <div id="collapseBuzos" class="accordion-collapse collapse" aria-labelledby="headingBuzos"
+            data-bs-parent="#accordionBuzos">
             <div class="accordion-body">
-
-              <!-- Nivel 3: Deportes -->
-              <div class="accordion" id="accordionDeportesMujer">
-                <!-- Futbol -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFutbolMujer">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFutbolMujer" aria-expanded="false" aria-controls="collapseFutbolMujer">
-                      Futbol
-                    </button>
-                  </h2>
-                  <div id="collapseFutbolMujer" class="accordion-collapse collapse" aria-labelledby="headingFutbolMujer"
-                    data-bs-parent="#accordionDeportesMujer">
-                    <div class="accordion-body">
-                      <a href="#" class="btn btn-premier w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="mujer" data-deporte="futbol" data-liga="premier-league">Premier League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="mujer" data-deporte="futbol" data-liga="la-liga">La Liga</a>
-                    </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingBuzosFutbol">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBuzosFutbol" aria-expanded="false" aria-controls="collapseBuzosFutbol">
+                    Futbol
+                  </button>
+                </h2>
+                <div id="collapseBuzosFutbol" class="accordion-collapse collapse" aria-labelledby="headingBuzosFutbol"
+                  data-bs-parent="#accordionBuzosFutbol">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Buzos sin gorro</a>
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Buzos con gorro</a>
                   </div>
                 </div>
-
-                <!-- MLB -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingMLBMujer">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseMLBMujer" aria-expanded="false" aria-controls="collapseMLBMujer">
-                      MLB
-                    </button>
-                  </h2>
-                  <div id="collapseMLBMujer" class="accordion-collapse collapse" aria-labelledby="headingMLBMujer"
-                    data-bs-parent="#accordionDeportesMujer">
-                    <div class="accordion-body">
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="mujer" data-deporte="mlb" data-liga="american-league">American League</a>
-                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
-                        data-subcategoria="mujer" data-deporte="mlb" data-liga="national-league">National League</a>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingBuzosNBA">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBuzosNBA" aria-expanded="false" aria-controls="collapseBuzosNBA">
+                    NBA
+                  </button>
+                </h2>
+                <div id="collapseBuzosNBA" class="accordion-collapse collapse" aria-labelledby="headingBuzosNBA"
+                  data-bs-parent="#accordionBuzosNBA">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Buzos</a>
                   </div>
                 </div>
-
-              </div> <!-- Fin Nivel 3: Deportes Mujer -->
-
+              </div>
             </div>
           </div>
         </div>
 
-      </div> <!-- Fin Nivel 2: Hombre/Mujer -->
+        <!-- ==================== CALZADO ==================== -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCalzado">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseCalzado" aria-expanded="false" aria-controls="collapseCalzado">
+              Calzado
+            </button>
+          </h2>
+          <div id="collapseCalzado" class="accordion-collapse collapse" aria-labelledby="headingCalzado"
+            data-bs-parent="#accordionCategorias">
+            <div class="accordion-body">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCalzadoFutbol">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCalzadoFutbol" aria-expanded="false" aria-controls="collapseCalzadoFutbol">
+                    Futbol
+                  </button>
+                </h2>
+                <div id="collapseCalzadoFutbol" class="accordion-collapse collapse"
+                  aria-labelledby="headingCalzadoFutbol" data-bs-parent="#accordionCalzadoFutbol">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Tacos</a>
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="mujer">Tennis Futbol</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCalzadoNBA">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCalzadoNBA" aria-expanded="false" aria-controls="collapseCalzadoNBA">
+                    NBA
+                  </button>
+                </h2>
+                <div id="collapseCalzadoNBA" class="accordion-collapse collapse" aria-labelledby="headingCalzadoNBA"
+                  data-bs-parent="#accordionCalzadoNBA">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="mujer">Tennis</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    </div>
-  </div>
-</div>
+        <!-- ==================== CAMISAS ==================== -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCamisas">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseCamisas" aria-expanded="false" aria-controls="collapseCamisas">
+              Camisas
+            </button>
+          </h2>
+          <div id="collapseCamisas" class="accordion-collapse collapse" aria-labelledby="headingCamisas"
+            data-bs-parent="#accordionCategorias">
+            <div class="accordion-body">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingT-Shirts">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseT-Shirts" aria-expanded="false" aria-controls="collapseT-Shirts">
+                    T-Shirts
+                  </button>
+                </h2>
+                <div id="collapseT-Shirts" class="accordion-collapse collapse" aria-labelledby="headingT-Shirts"
+                  data-bs-parent="#accordionT-Shirts">
+                  <div class="accordion-body">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingCamisasMangaCorta">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseCamisasMangaCorta" aria-expanded="false"
+                          aria-controls="collapseCamisasMangaCorta">
+                          Manga Corta
+                        </button>
+                      </h2>
+                      <div id="collapseCamisasMangaCorta" class="accordion-collapse collapse"
+                        aria-labelledby="headingCamisasMangaCorta" data-bs-parent="#accordionCamisasMangaCorta">
+                        <div class="accordion-body">
+                          <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                            data-subcategoria="hombre">Futbol</a>
+                          <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                            data-subcategoria="hombre">NBA</a>
+                          <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                            data-subcategoria="hombre">MLB</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingCamisasMangaLarga">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseCamisasMangaLarga" aria-expanded="false"
+                          aria-controls="collapseCamisasMangaLarga">
+                          Manga Larga
+                        </button>
+                      </h2>
+                      <div id="collapseCamisasMangaLarga" class="accordion-collapse collapse"
+                        aria-labelledby="headingCamisasMangaLarga" data-bs-parent="#accordionMangaLarga">
+                        <div class="accordion-body">
+                          <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                            data-subcategoria="hombre">NBA</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingCamisasMangaLargaDryFit">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseCamisasMangaLargaDryFit" aria-expanded="false"
+                          aria-controls="collapseCamisasMangaLargaDryFit">
+                          Manga Larga Dry Fit
+                        </button>
+                      </h2>
+                      <div id="collapseCamisasMangaLargaDryFit" class="accordion-collapse collapse"
+                        aria-labelledby="headingCamisasMangaLargaDryFit" data-bs-parent="#accordionMangaLargaDryFit">
+                        <div class="accordion-body">
+                          <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                            data-subcategoria="hombre">NBA</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCamisasPolo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCamisasPolo" aria-expanded="false" aria-controls="collapseCamisasPolo">
+                    Polo
+                  </button>
+                </h2>
+                <div id="collapseCamisasPolo" class="accordion-collapse collapse" aria-labelledby="headingCamisasPolo"
+                  data-bs-parent="#accordionPolo">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Futbol</a>
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">MLB</a>
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">Formula 1</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCamisasGorro">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCamisasGorro" aria-expanded="false" aria-controls="collapseCamisasGorro">
+                    Con gorro
+                  </button>
+                </h2>
+                <div id="collapseCamisasGorro" class="accordion-collapse collapse" aria-labelledby="headingCamisasGorro"
+                  data-bs-parent="#accordionGorro">
+                  <div class="accordion-body">
+                    <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="calzado"
+                      data-subcategoria="hombre">MLB</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        
-      
+        <!-- ==================== CAMISETAS ==================== -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCamisetas">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseCamisetas" aria-expanded="false" aria-controls="collapseCamisetas">
+              Camisetas
+            </button>
+          </h2>
+          <div id="collapseCamisetas" class="accordion-collapse collapse" aria-labelledby="headingCamisetas"
+            data-bs-parent="#accordionCategorias">
+            <div class="accordion-body">
+              <!-- Nivel 2: HOMBRE -->
+              <div class="accordion" id="accordionCamisasHombre">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingCamisasHombre">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseCamisasHombre" aria-expanded="false"
+                      aria-controls="collapseCamisasHombre">
+                      Hombre
+                    </button>
+                  </h2>
+                  <div id="collapseCamisasHombre" class="accordion-collapse collapse"
+                    aria-labelledby="headingCamisasHombre" data-bs-parent="#accordionCamisasHombre">
+                    <div class="accordion-body">
+                      <!-- Nivel 3: EUROPA -->
+                      <div class="accordion" id="accordionCamisasFutbol">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingCamisasFutbol">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseCamisasFutbol" aria-expanded="false"
+                              aria-controls="collapseCamisasFutbol">
+                              Futbol
+                            </button>
+                          </h2>
+                          <div id="collapseCamisasFutbol" class="accordion-collapse collapse"
+                            aria-labelledby="headingCamisasFutbol" data-bs-parent="#accordionCamisasFutbol">
+                            <div class="accordion-body">
+                              <!-- Nivel 4: Ligas -->
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="futbol" data-liga="premier-league">Premier
+                                League</a>
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="futbol" data-liga="la-liga">La Liga</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion" id="accordionCamisasNBA">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingCamisasNBA">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseCamisasNBA" aria-expanded="false"
+                              aria-controls="collapseCamisasNBA">
+                              NBA
+                            </button>
+                          </h2>
+                          <div id="collapseCamisasNBA" class="accordion-collapse collapse"
+                            aria-labelledby="headingCamisasNBA" data-bs-parent="#accordionCamisasNBA">
+                            <div class="accordion-body">
+                              <!-- Nivel 4: Ligas -->
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="premier-league">Premier
+                                League</a>
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="la-liga">La Liga</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion" id="accordionCamisasNFL">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingCamisasNFL">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseCamisasNFL" aria-expanded="false"
+                              aria-controls="collapseCamisasNFL">
+                              NFL
+                            </button>
+                          </h2>
+                          <div id="collapseCamisasNFL" class="accordion-collapse collapse"
+                            aria-labelledby="headingCamisasNFL" data-bs-parent="#accordionCamisasNFL">
+                            <div class="accordion-body">
+                              <!-- Nivel 4: Ligas -->
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="premier-league">Premier
+                                League</a>
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="la-liga">La Liga</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion" id="accordionCamisasMLB">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingCamisasMLB">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseCamisasMLB" aria-expanded="false"
+                              aria-controls="collapseCamisasMLB">
+                              MLB
+                            </button>
+                          </h2>
+                          <div id="collapseCamisasMLB" class="accordion-collapse collapse"
+                            aria-labelledby="headingCamisasMLB" data-bs-parent="#accordionCamisasMLB">
+                            <div class="accordion-body">
+                              <!-- Nivel 4: Ligas -->
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="premier-league">Premier
+                                League</a>
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="la-liga">La Liga</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion" id="accordionCamisasFormula1">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingCamisasFormula1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseCamisasFormula1" aria-expanded="false"
+                              aria-controls="collapseCamisasFormula1">
+                              Formula 1
+                            </button>
+                          </h2>
+                          <div id="collapseCamisasFormula1" class="accordion-collapse collapse"
+                            aria-labelledby="headingCamisasFormula1" data-bs-parent="#accordionCamisasFormula1">
+                            <div class="accordion-body">
+                              <!-- Nivel 4: Ligas -->
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="premier-league">Premier
+                                League</a>
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="hombre" data-region="europa" data-liga="la-liga">La Liga</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Nivel 3 alternativo: sin región (solo liga)
+                      <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                        data-subcategoria="hombre" data-region="" data-liga="premier-league">Premier League
+                        (Directo)</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nivel 2: MUJER -->
+              <div class="accordion" id="accordionCamisasMujer">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingCamisasMujer">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseCamisasMujer" aria-expanded="false" aria-controls="collapseCamisasMujer">
+                      Mujer
+                    </button>
+                  </h2>
+                  <div id="collapseCamisasMujer" class="accordion-collapse collapse"
+                    aria-labelledby="headingCamisasMujer" data-bs-parent="#accordionCamisasMujer">
+                    <div class="accordion-body">
+                      <div class="accordion" id="accordionCamisasMujerEuropa">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingCamisasMujerEuropa">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseCamisasMujerEuropa" aria-expanded="false"
+                              aria-controls="collapseCamisasMujerEuropa">
+                              Europa
+                            </button>
+                          </h2>
+                          <div id="collapseCamisasMujerEuropa" class="accordion-collapse collapse"
+                            aria-labelledby="headingCamisasMujerEuropa" data-bs-parent="#accordionCamisasMujerEuropa">
+                            <div class="accordion-body">
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="mujer" data-region="europa" data-liga="premier-league">Premier
+                                League</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Mujer -->
+
+              <!-- Nivel 2: NIÑO -->
+              <div class="accordion" id="accordionCamisasniño">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingCamisasniño">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseCamisasniño" aria-expanded="false" aria-controls="collapseCamisasMujer">
+                      Niño
+                    </button>
+                  </h2>
+                  <div id="collapseCamisasniño" class="accordion-collapse collapse" aria-labelledby="headingCamisasniño"
+                    data-bs-parent="#accordionCamisasniño">
+                    <div class="accordion-body">
+                      <div class="accordion" id="accordionCamisasniñoEuropa">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingCamisasniñoEuropa">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseCamisasniñoEuropa" aria-expanded="false"
+                              aria-controls="collapseCamisasniñoEuropa">
+                              Europa
+                            </button>
+                          </h2>
+                          <div id="collapseCamisasniñoEuropa" class="accordion-collapse collapse"
+                            aria-labelledby="headingCamisasniñoEuropa" data-bs-parent="#accordionCamisasniñoEuropa">
+                            <div class="accordion-body">
+                              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="camisas"
+                                data-subcategoria="niño" data-region="europa" data-liga="premier-league">Premier
+                                League</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Niño -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin CAMISETAS -->
+
+        <!-- ==================== GUANTES ==================== -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingGuantes">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseGuantes" aria-expanded="false" aria-controls="collapseGuantes">
+              Guantes
+            </button>
+          </h2>
+          <div id="collapseGuantes" class="accordion-collapse collapse" aria-labelledby="headingGuantes"
+            data-bs-parent="#accordionGuantes">
+            <div class="accordion-body">
+              <a href="#" class="btn btn-outline-primary w-100 mb-2" data-categoria="ofertas">Futbol</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== OFERTAS ==================== -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOfertas">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOfertas" aria-expanded="false" aria-controls="collapseOfertas">
+              Ofertas
+            </button>
+          </h2>
+          <div id="collapseOfertas" class="accordion-collapse collapse" aria-labelledby="headingOfertas"
+            data-bs-parent="#accordionCategorias">
+            <div class="accordion-body">
+              <a href="#" class="btn btn-outline-danger w-100 mb-2" data-categoria="ofertas">Ver Ofertas</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
   </div>
 
   <!-- 🔹 Contenedor de productos -->
@@ -180,8 +553,11 @@
     <h2 id="titulo-seccion">Ofertas</h2>
     <div class="product-grid" id="galeria-productos"></div>
   </div>
+
+  <!-- 🔹 Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

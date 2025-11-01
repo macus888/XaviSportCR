@@ -1,8 +1,8 @@
        body {
-  background: linear-gradient(135deg, #f6f6f6 0%, #e3e3e3 50%, #d9d9d9 100%);
-  color: #222;
-  font-family: 'Segoe UI', sans-serif;
-  min-height: 100vh;
+         background: linear-gradient(135deg, #f6f6f6 0%, #e3e3e3 50%, #d9d9d9 100%);
+         color: #222;
+         font-family: 'Segoe UI', sans-serif;
+         min-height: 100vh;
        }
 
        /* ====== NAVBAR PERSONALIZADO ====== */
@@ -12,11 +12,28 @@
          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
        }
 
+       /* ===== LOGO RESPONSIVE ===== */
        .navbar-brand img {
-         height: 100px;
+         height: 45px;
          width: auto;
          margin-right: 10px;
-         filter: drop-shadow(0 0 6px rgba(160, 32, 240, 0.8));
+         filter: drop-shadow(0 0 6px rgba(160, 32, 240, 0.7));
+         transition: all 0.3s ease;
+       }
+
+       /* 🔹 Ajuste automático en pantallas pequeñas */
+       @media (max-width: 768px) {
+         .navbar-brand img {
+           height: 35px;
+           /* más pequeño en tablet */
+         }
+       }
+
+       @media (max-width: 480px) {
+         .navbar-brand img {
+           height: 28px;
+           /* tamaño ideal en móvil */
+         }
        }
 
        .navbar-brand span {
@@ -60,12 +77,20 @@
 
        /* ====== IMAGEN DEL PRODUCTO ====== */
        .product-img {
-         width: 200px;
+         width: 170px;
          height: 200px;
          border-radius: 20px;
          object-fit: cover;
          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
          transition: transform 0.3s ease;
+       }
+
+      .product-version {
+         color: #0b0113;
+         font-size: 0.95rem;
+         font-style: italic;
+         margin-top: 5px;
+         margin-bottom: 5px;
        }
 
        .product-img:hover {
@@ -75,12 +100,12 @@
        /* ====== TEXTO DE LA TARJETA ====== */
        .product-card h5 {
          margin-top: 10px;
-         font-size: 1.1rem;
+         font-size: 1.0rem;
          color: #0e0d0d;
        }
 
        .product-card p {
-         color: #cbb3ff;
+         color: #1b0144;
          font-weight: 500;
          margin-bottom: 0;
        }
@@ -101,3 +126,4 @@
          transform: scale(1.05);
          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
        }
+

@@ -1,38 +1,58 @@
+// ==========================
+// Xavi Sports - script.js
+// ==========================
 
-    let productosData = {};
-    // Cargar productos desde JSON
-    fetch('productos.json')
-      .then(response => response.json())
-      .then(data => {
-        productosData = data;
-        // 🔹 Al iniciar, mostrar los productos de ofertas
-        if (productosData["ofertas"]) {
-          mostrarProductos("ofertas");
-        }
-      })
-      .catch(err => console.error("Error al cargar productos.json:", err));
+let productosData = {};
 
-    // Mostrar productos según categoría y subcategoría
-    // 🟢 Mostrar productos (1, 2 o 3 niveles)
-    function mostrarProductos(categoria, subcategoria = null, region = null, liga = null) {
+// 🟢 Cargar productos desde JSON
+fetch('productos.json')
+  .then(response => response.json())
+  .then(data => {
+    productosData = data;
+    // Cargar ofertas por defecto al iniciar
+    if (productosData["ofertas"]) {
+      mostrarProductos("ofertas");
+    }
+  })
+  .catch(err => console.error("Error al cargar productos.json:", err));
+
+// 🟢 Función flexible para mostrar productos (soporta 2, 3 o 4 niveles)
+function mostrarProductos(categoria, subcategoria = null, region = null, liga = null) {
   const contenedor = document.getElementById('galeria-productos');
   const titulo = document.getElementById('titulo-seccion');
   contenedor.innerHTML = '';
 
   let productos = [];
 
-  // Soporte para hasta 4 niveles
-  if (liga) {
-    productos = productosData?.[categoria]?.[subcategoria]?.[region]?.[liga] || [];
-  } else if (region) {
-    productos = productosData?.[categoria]?.[subcategoria]?.[region] || [];
-  } else if (subcategoria) {
-    productos = productosData?.[categoria]?.[subcategoria] || [];
-  } else {
-    productos = productosData?.[categoria] || [];
+  // Validar categoría principal
+  const cat = productosData?.[categoria];
+  if (!cat) {
+    contenedor.innerHTML = '<p class="text-center mt-4">No se encontró la categoría seleccionada.</p>';
+    return;
   }
 
-  // Actualizar título dinámico
+  // Detección de niveles jerárquicos
+  if (liga && region && subcategoria) {
+    // 4 niveles
+    productos = cat?.[subcategoria]?.[region]?.[liga] || [];
+  } else if (region && subcategoria) {
+    // 3 niveles
+    productos = cat?.[subcategoria]?.[region] || [];
+  } else if (subcategoria) {
+    // 2 niveles
+    productos = cat?.[subcategoria] || [];
+  } else {
+    // 1 nivel
+    productos = cat;
+  }
+
+  // 🔹 Si el resultado no es un array, buscar el primer nivel con productos
+  if (!Array.isArray(productos)) {
+    const nivel = Object.values(productos).find(v => Array.isArray(v));
+    if (nivel) productos = nivel;
+  }
+
+  // 🔹 Actualizar título dinámico
   if (titulo) {
     const nuevoTitulo = liga
       ? liga.replace(/-/g, ' ').toUpperCase()
@@ -47,24 +67,27 @@
     });
   }
 
-  // Mostrar productos
-  if (!productos.length) {
-    contenedor.innerHTML = '<p class="text-center mt-4">No hay productos disponibles.</p>';
+  // 🔹 Mostrar mensaje si no hay productos
+  if (!productos || productos.length === 0) {
+    contenedor.innerHTML = '<p class="text-center mt-4">No hay productos disponibles en esta categoría.</p>';
     return;
   }
 
+  // 🔹 Renderizar los productos
   productos.forEach(p => {
+    const versionTexto = p.version ? `<p class="product-version">${p.version}</p>` : '';
     const card = `
       <div class="product-card">
         <img src="${p.imagen}" alt="${p.nombre}" class="product-img">
         <h5>${p.nombre}</h5>
+        ${versionTexto}
         <p>₡${p.precio.toLocaleString()}</p>
       </div>`;
     contenedor.insertAdjacentHTML('beforeend', card);
   });
 }
-    // Escuchar clics en los botones del menú
-    document.addEventListener('click', e => {
+// 🟢 Detectar clics en el menú (hasta 4 niveles)
+document.addEventListener('click', e => {
   const btn = e.target.closest('[data-categoria]');
   if (btn) {
     e.preventDefault();
@@ -76,6 +99,7 @@
     const sidebar = document.getElementById('sidebar');
     const offcanvas = bootstrap.Offcanvas.getInstance(sidebar);
 
+    // Cerrar el menú lateral y luego cargar productos
     if (offcanvas) {
       offcanvas.hide();
       setTimeout(() => mostrarProductos(categoria, subcategoria, region, liga), 350);

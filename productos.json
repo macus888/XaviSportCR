@@ -1,21 +1,140 @@
 {
   "camisas": {
     "hombre": {
-      "premier-league": [
-        { "nombre": "Camiseta Manchester City 2024", "precio": 59900, "imagen": "img/man_city.jpg" },
-        { "nombre": "Camiseta Arsenal 2024", "precio": 58900, "imagen": "img/arsenal.jpg" }
-      ],
-      "la-liga": [
-        { "nombre": "Camiseta Real Madrid 2024", "precio": 61900, "imagen": "img/real_madrid.jpg" }
-      ]
+      "futbol": {
+        "premier-league": [
+          {
+            "nombre": "Camiseta Arsenal Casa 25-26",
+            "precio": 58900,
+            "version": "Fan y Player",
+            "imagen": "images/camisas/premier league/ARSENAL CASA 25-26 FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta Chelsea Casa 25-26",
+            "precio": 59900,
+            "version": "Fan y Player",
+            "imagen": "images/camisas/premier league/CHELSEA CASA 25-26 FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta Chelsea Visita 25-26",
+            "precio": 59900,
+            "version": "Fan y Player",
+            "imagen": "images/camisas/premier league/CHELSEA VISITA 25-26 FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta Liverpool 3era 25-26",
+            "precio": 59900,
+            "version": "Fan y Player",
+            "imagen": "images/camisas/premier league/LIVERPOOL 3ERA 25-26 FAN Y PLAYER.jpeg"
+          },
+          {
+            "nombre": "Camiseta Liverpool Casa 25-26",
+            "precio": 59900,
+            "version": "Fan y Player",
+            "imagen": "images/camisas/premier league/LIVERPOOL CASA 25-26 CASA FAN Y PLAYER.jpeg"
+          },
+          {
+            "nombre": "Camiseta Liverpool Visita 25-26",
+            "precio": 59900,
+            "version": "Fan y Player",
+            "imagen": "images/camisas/premier league/LIVERPOOL VISITA 25-26 FAN Y PLAYER.jpeg"
+          },
+          {
+            "nombre": "Camiseta Manchester City Casa 25-26",
+            "precio": 59900,
+            "version": "Fan y Player",
+            "imagen": "images/camisas/premier league/MAN CITY CASA 25-26 FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta Manchester City Visita 25-26",
+            "precio": 59900,
+            "version":"Fan y Player",
+            "imagen": "images/camisas/premier league/MAN CITY VISITA MUNDIAL CLUBES FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta Manchester United Casa 25-26",
+            "precio": 59900,
+            "version":"Fan y Player",
+            "imagen": "images/camisas/premier league/MAN UNITED CASA 24-25 FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta Newcastle Casa 25-26",
+            "precio": 59900,
+            "version":"Fan y Player",
+            "imagen": "images/camisas/premier league/NEWCASTLE CASA 25-26 FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta Nottingham Forest Casa 25-26",
+            "precio": 59900,
+            "version":"Fan",
+            "imagen": "images/camisas/premier league/NOTTINGHAM FOREST CASA 25-26 SOLO FAN.jpg"
+          },
+          {
+            "nombre": "Camiseta Tottenham Casa 25-26",
+            "precio": 59900,
+            "version":"Fan",
+            "imagen": "images/camisas/premier league/TOTTENHAM CASA 25-26 FAN Y PLAYER.jpg"
+          }
+        ],
+        "la-liga": [
+          {
+            "nombre": "Camiseta Real Madrid 25-26",
+            "precio": 61900,
+            "version":"Fan y Player",
+            "imagen": "images/camisas/La Liga/REAL MADRID CASA 25-26 FAN Y PLAYER.jpg"
+          },
+          {
+            "nombre": "Camiseta FC Barcelona 25-26",
+            "precio": 60900,
+            "version":"Fan y Player",
+            "imagen": "images/camisas/La Liga/BARCELONA CASA 24-25 FAN Y PLAYER.jpg"
+          }
+        ]
+      }
     },
     "mujer": {
-      "premier-league": [
-        { "nombre": "Camiseta Chelsea Mujer 2024", "precio": 57900, "imagen": "img/chelsea_mujer.jpg" }
-      ]
+      "europa": {
+        "premier-league": [
+          {
+            "nombre": "Camiseta Arsenal Mujer 2024",
+            "precio": 54900,
+            "imagen": "img/arsenal_mujer.jpg"
+          }
+        ]
+      }
     }
   },
+  "calzado": {
+    "hombre": [
+      {
+        "nombre": "Tenis Nike Air Zoom Mercurial",
+        "precio": 74900,
+        "imagen": "img/nike_airzoom.jpg"
+      },
+      {
+        "nombre": "Tenis Adidas Predator Edge",
+        "precio": 69900,
+        "imagen": "img/adidas_predator.jpg"
+      }
+    ],
+    "mujer": [
+      {
+        "nombre": "Tenis Nike Phantom Luna",
+        "precio": 71900,
+        "imagen": "img/nike_phantom_luna.jpg"
+      }
+    ]
+  },
   "ofertas": [
-    { "nombre": "Balón Adidas Copa Mundial 2022", "precio": 34900, "imagen": "img/al_rihla.jpg" }
+    {
+      "nombre": "Balón Adidas Copa Mundial 2022",
+      "precio": 34900,
+      "imagen": "img/ball_adidas.jpg"
+    },
+    {
+      "nombre": "Camiseta Retro Manchester United 1999",
+      "precio": 45900,
+      "imagen": "img/united_retro.jpg"
+    }
   ]
 }
